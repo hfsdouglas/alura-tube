@@ -2,11 +2,13 @@ import config from "../config.json"
 import styled from "styled-components"
 import { CSSReset } from "../src/components/CSSReset"
 import Menu from "../src/components/Menu"
-import Timeline from "../src/components/Timeline"
+import {StyledTimeline} from "../src/components/Timeline"
 
 function HomePage() {
     const styleHomePage = {
-        //backgroundColor: "red"
+        display: "flex",
+        flexDirection: "column",
+        flex: 1,
     }
 
     console.log(config.playlists)
@@ -33,6 +35,7 @@ const StyledHeader = styled.div`
         border-radius: 50%;
     }
     .user-info {
+        margin-top: 50px;
         display: flex;
         align-items: center;
         width: 100%;
